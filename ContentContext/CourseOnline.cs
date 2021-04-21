@@ -5,7 +5,8 @@ namespace Course.ContentContext
 {
     public class CourseOnline : Content
     {
-        public CourseOnline()
+         public CourseOnline(string title, string url)
+        : base(title, url)
         {
             Modules = new List<Module>();
         }
