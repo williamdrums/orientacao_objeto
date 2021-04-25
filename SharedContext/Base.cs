@@ -1,7 +1,7 @@
 using System;
 using Course.NotificationContext;
 
-namespace Course.ContentContext
+namespace Course.SharedContext
 {
     public abstract class Base : Notifiable
     {

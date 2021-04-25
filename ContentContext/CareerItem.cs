@@ -1,4 +1,5 @@
 using Course.NotificationContext;
+using Course.SharedContext;
 
 namespace Course.ContentContext
 {

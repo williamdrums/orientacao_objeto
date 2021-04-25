@@ -1,4 +1,5 @@
 using Course.ContentContext.Enums;
+using Course.SharedContext;
 
 namespace Course.ContentContext
 {

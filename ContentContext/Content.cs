@@ -1,4 +1,5 @@
 using System;
+using Course.SharedContext;
 
 namespace Course.ContentContext
 {
