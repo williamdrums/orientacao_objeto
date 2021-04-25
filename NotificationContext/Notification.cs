@@ -1,20 +1,20 @@
 namespace Course.NotificationContext
 {
 
-    public sealed class NotificationContext
+    public sealed class Notification
     {
-        public NotificationContext()
+        public Notification()
         {
 
         }
-        public NotificationContext(string property, string message)
+        public Notification(string property, string message)
         {
             Property = property;
-            this.message = message;
+            this.Message = message;
         }
 
         public string Property { get; set; }
 
-        public string message { get; set; }
+        public string Message { get; set; }
     }
 }

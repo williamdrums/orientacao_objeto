@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Course.ContentContext
 {
-    public class Module
+    public class Module : Base
     {
         public Module()
         {

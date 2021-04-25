@@ -34,7 +34,7 @@ namespace Course
 
             var careers = new List<Career>();
             var careerDotNet = new Career("Especialista .NET", "especialista-dotnet");
-            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", courseOOP);
+            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", null);
             var careerItem1 = new CareerItem(1, "Comece aqui", "", courseCsharp);
             var careerItem3 = new CareerItem(3, "Aprenda .NET", "", courseAspNet);
 
@@ -53,8 +53,13 @@ namespace Course
                 foreach (var item in career.Items.OrderBy(x => x.Ordem))
                 {
                     Console.WriteLine($"{item.Ordem} - {item.Title}");
-                    Console.WriteLine(item.CourseOnline.Title);
-                    Console.WriteLine(item.CourseOnline.Level);
+                    Console.WriteLine(item.CourseOnline?.Title);
+                    Console.WriteLine(item.CourseOnline?.Level);
+
+                    foreach (var notification in item.Notifications)
+                    {
+                        Console.WriteLine($"{notification.Property} - {notification.Message}");
+                    }
                 }
             }
 

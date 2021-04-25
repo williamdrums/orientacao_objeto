@@ -1,12 +1,15 @@
+using Course.NotificationContext;
+
 namespace Course.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Base
     {
         public CareerItem(int ordem, string title, string description, CourseOnline courseOnline)
         {
 
             if(courseOnline ==  null)
-            throw new System.Exception("O curso não pode ser nullo");
+            AddNotification(new Notification("Course","Curso invalido"));
+
             Ordem = ordem;
             Title = title;
             Description = description;
