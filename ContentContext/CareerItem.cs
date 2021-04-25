@@ -4,6 +4,9 @@ namespace Course.ContentContext
     {
         public CareerItem(int ordem, string title, string description, CourseOnline courseOnline)
         {
+
+            if(courseOnline ==  null)
+            throw new System.Exception("O curso não pode ser nullo");
             Ordem = ordem;
             Title = title;
             Description = description;
