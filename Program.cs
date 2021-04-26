@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Course.ContentContext;
+using Course.SubscriptionContext;
 
 namespace Course
 {
@@ -62,6 +63,11 @@ namespace Course
                     }
                 }
             }
+
+            var payPalSubscription = new PayPalSubscription();
+            var student = new Student();
+
+            student.CreateSubscription(payPalSubscription);
 
 
             // foreach (var article in articles)
